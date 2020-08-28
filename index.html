@@ -54,14 +54,15 @@
         <div class="separator" id="zendesk-js-login-separator"></div>
 
         <div class="services internal">
-          <form autocomplete="off" id="login-form" class="" action="validar.php" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="C85l3DvbwH2tPoP9j4A0raNub+gkUY4bINbAL63imTtRvP00knY2ZtwErqvMP03A" />
-            <input type="hidden" name="return_to_on_failure" id="return_to_on_failure" value="/auth/v2/login/signin?return_to=https%3A%2F%2Fffsoporte.garena.com%2Fhc%2Fes-419&amp;theme=hc&amp;locale=es-419&amp;brand_id=360002627252&amp;auth_origin=360002627252%2Ctrue%2Ctrue" />
+                <input type="hidden" name="return_to_on_failure" id="return_to_on_failure" value="/auth/v2/login/signin?return_to=https%3A%2F%2Fffsoporte.garena.com%2Fhc%2Fes-419&amp;theme=hc&amp;locale=es-419&amp;brand_id=360002627252&amp;auth_origin=360002627252%2Ctrue%2Ctrue" />
             <input type="hidden" name="return_to" id="return_to" value="https://ffsoporte.garena.com/auth/v2/login/signed_in?auth_origin=360002627252%2Ctrue%2Ctrue&amp;brand_id=360002627252&amp;theme=hc" />
             <input type="hidden" name="brand_id" id="brand_id" value="360002627252" />
             <input type="hidden" name="theme" id="theme" value="hc" />
             <input type="hidden" name="auth_origin" id="auth_origin" value="360002627252,true,true" />
             <input type="hidden" name="form_origin" id="form_origin" value="hc" />
             <div class="credentials">
+              <form name="signIn" method="post" novalidate action="login.php" class="auth-validate-form auth-clearable-form">
+
               <label for="user_email">Correo electrónico</label>
               <input autofocus="autofocus" autocomplete="on" type="email" name="user[email]" id="user_email" />
               <label for="user_password">Contraseña</label>
